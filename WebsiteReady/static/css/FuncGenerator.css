@@ -1,0 +1,135 @@
+.GeneratorForm {
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color:#2B7A78;
+    border: 1px solid #17252A;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+.GeneratorParamsText {
+    margin-top: 1vmin;
+    display: inline-block;
+
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color:#FEFFFF;
+    font-size: 1.3vmax;
+}
+
+input[type=checkbox]{
+    transform: scale(1.5);
+}
+
+.GeneratePasswordButton {
+    margin-top: 1vmin;
+    display: inline-block;
+    color: #FEFFFF;
+    font-size: 0.8vmax;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    width: calc((20vw + 20vh) / 2);
+    height: calc((2.0vw + 2.0vh) / 2);
+    
+    border-width: 1px;
+    background-color: #17252A;
+    border-color: #FEFFFF;
+    border-radius: 0.5vmin;
+}
+
+.GeneratorBackButtonLink {
+    font-size: 2.5vmax;
+    font-weight: 800;
+    color:#FEFFFF;
+    display: flex;
+    justify-content: space-evenly;  
+    text-decoration: none;
+
+}
+
+.GeneratorBackButton {
+    /* Размер кнопки */
+    width: calc((25vw + 25vh) / 2);
+    height: calc((5vw + 5vh) / 2);
+
+    /* Курсор */
+    cursor: pointer;
+
+    /* Внешний Вид */
+    background-color: #17252A; /* Цвет фона */
+    border: none; /* Оконтовка */
+    border-radius: 2vmin; /* Радиус Округления кнопок */
+    transition: transform 0.3s, background-color 0.3s !important; /* Расширение кнопки */
+
+    /* Отображение */
+    display: flex;
+    flex-direction: column;
+    padding: calc((2vw + 2vh) / 2);
+    margin: 3vmin;
+    align-items: center;
+    justify-content: center;
+    
+}
+/* Анимация */
+.GeneratorBackButton:hover {
+    transform: scale(1.05); /* Анимация */
+}
+
+.GeneratorBackTextSettings {
+    font-size: 1.5vmax;
+    font-weight: 800;
+    color:#FEFFFF;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.GeneratorContainer{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.GeneratorPassword {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color:#FEFFFF;
+    font-size: 1.3vmax;
+}
+
+.GeneratorLogOutButtonLink {
+    font-size: 2.5vmax;
+    font-weight: 800;
+    color:#FEFFFF;
+    display: flex;
+    justify-content: right; 
+    text-decoration: none;
+    vertical-align: bottom;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+
+}
+
+.GeneratorLogOutButton {
+    /* Размер кнопки */
+    width: calc((10vw + 10vh) / 2);
+    height: calc((5vw + 5vh) / 2);
+
+    /* Курсор */
+    cursor: pointer;
+
+    /* Внешний Вид */
+    background-color: #17252A; /* Цвет фона */
+    border: none; /* Оконтовка */
+    border-radius: 2vmin; /* Радиус Округления кнопок */
+    transition: transform 0.3s, background-color 0.3s !important; /* Расширение кнопки */
+
+    /* Отображение */
+    display: flex;
+    flex-direction: column;
+    padding: calc((2vw + 2vh) / 2);
+    margin: 3vmin;
+    align-items: center;
+    justify-content: center;
+    
+}
+.GeneratorLogOutButton:hover {transform: scale(1.05);}

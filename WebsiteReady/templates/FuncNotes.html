@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content1 %}
+<div class="TextHeader">Ваши заметки</div>
+{% endblock %}
+
+{% block content2 %}
+<div class="NotesContainer">
+    <div class="NotesForm">
+        <form class="NotesFormSettings" name="NotesForm" method="post">
+            <button class="NotesPasswordButton" name="PasswordButton1">Пароль 1</button>
+            <button class="NotesPasswordButton" name="PasswordButton2">Пароль 2</button>
+            <button class="NotesPasswordButton" name="PasswordButton3">Пароль 3</button>
+            <button class="NotesPasswordButton" name="PasswordButton4">Пароль 4</button>
+        </form>
+    </div>
+    <a class="NotesBackButtonLink" href="/">
+        <button class="NotesBackButton" name="ButtonBack">
+            <h1 class="NotesBackTextSettings">НАЗАД</h1>
+        </button>
+    </a>
+
+<a class="NotesLogOutButtonLink" href="/logout">
+    <button class="NotesLogOutButton" name="LogOutButton">
+        <h1 class="NotesBackTextSettings">LogOut</h1>
+    </button>
+</a>
+
+{% endblock %}
