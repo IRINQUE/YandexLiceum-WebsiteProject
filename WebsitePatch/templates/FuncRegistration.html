@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content1 %}
+<div class="TextHeader">Регистрация</div>
+{% endblock %}
+
+{% block content2 %}
+<div class="RegistrationContainer">
+    <div class="RegistrationForm">
+        <form class="RegistrationFormSettings" name="RegistrationFormMain" method="post">
+            <div class="RegistrationUserNickName">
+                <label class="RegistrationParamsText">Логин:</label>
+                <br>
+                <input class="RegistrationTextHolder" type="text" name="Username" placeholder="Введите Ваш Логин">
+            </div>
+            <br>
+            <div class="RegistrationUserPassword">
+                <label class="RegistrationParamsText">Пароль:</label>
+                <br>
+                <input class="RegistrationTextHolder" type="text" name="Password" placeholder="Введите Ваш Пароль">
+            </div>
+            <br>
+           <input type="submit" name="RegisterData" class="RegistrationCheckRegistrationData" value="Зарегистрироваться">
+        </form>
+        
+    </div>
+    <a class="RegistrationBackButtonLink" href="/">
+        <button class="RegistrationBackButton" name="ButtonBack">
+            <h1 class="RegistrationBackTextSettings">НАЗАД</h1>
+        </button>
+    </a>
+</div>
+
+<a class="RegistrationLogOutButtonLink" href="/logout">
+    <button class="RegistrationLogOutButton" name="LogOutButton">
+        <h1 class="RegistrationBackTextSettings">LogOut</h1>
+    </button>
+</a>
+{% endblock %}
