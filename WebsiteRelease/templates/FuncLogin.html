@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content1 %}
+<div class="TextHeader">Вход В Аккаунт</div>
+{% endblock %}
+
+{% block content2 %}
+<div class="LoginContainer">
+    <div class="LoginForm">
+        <form class="LoginFormSettings" name="LoginFormMain" method="post">
+            <div class="LoginUserNickName">
+                <label class="LoginParamsText">Логин:</label>
+                <br>
+                <input class="LoginTextHolder" type="text" name="Username" placeholder="Введите Ваш Логин">
+            </div>
+            <br>
+            <div class="LoginUserPassword">
+                <label class="LoginParamsText">Пароль:</label>
+                <br>
+                <input class="LoginTextHolder" type="text" name="Password" placeholder="Введите Ваш Пароль">
+            </div>
+            <br>
+            <input type="submit" name="LoginCheckLoginData" class="LoginCheckLoginData" value="Войти В Аккаунт">
+            <br>
+            <label class="LoginParamsText">Нет Аккаунта? Регистрируйся!</label>
+            <br>
+            <button class="LoginToRegButton" name="ToRegButton">Регистрация</button>
+        </form>
+        
+    </div>
+    <a class="LoginBackButtonLink" href="/">
+        <button class="LoginBackButton" name="ButtonBack">
+            <h1 class="LoginBackTextSettings">НАЗАД</h1>
+        </button>
+    </a>
+    
+</div>
+{% endblock %}

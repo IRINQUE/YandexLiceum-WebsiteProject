@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content1 %}
+<div class="NotesMainHeader">
+    <img src="{{ picture }}" class="NotesAvatar">
+    <div class="NotesTextHeader">Заметки {{nickname}}</div>
+</div>
+{% endblock %}
+
+{% block content2 %}
+<div class="NotesContainer">
+    <div class="NotesForm">
+        <form class="NotesFormSettings" name="NotesForm" method="post">
+            <button class="NotesPasswordButton" name="PasswordButton1">Пароль 1</button>
+            <button class="NotesPasswordButton" name="PasswordButton2">Пароль 2</button>
+            <button class="NotesPasswordButton" name="PasswordButton3">Пароль 3</button>
+            <button class="NotesPasswordButton" name="PasswordButton4">Пароль 4</button>
+        </form>
+    </div>
+    <div class="NotesForm2">
+        <form action="{{ url_for('upload') }}" class="NotesFormProfileImgUpdate" method="POST" enctype=multipart/form-data>
+            <input class="NotesFormFileInput" type="file" id="image" name="file" accept=".jpg, .jpeg, .png">
+            <label class="NotesFormFileLabel" for="image">Аватарка</label>
+            <input class="NotesFormFileButton" type=submit value="Сохранить">
+        </form>
+    </div>
+    <a class="NotesBackButtonLink" href="/">
+        <button class="NotesBackButton" name="ButtonBack">
+            <h1 class="NotesBackTextSettings">НАЗАД</h1>
+        </button>
+    </a>
+    <a class="NotesLogOutButtonLink" href="/logout">
+        <button class="NotesLogOutButton" name="LogOutButton">
+            <h1 class="NotesBackTextSettings">LogOut</h1>
+        </button>
+    </a>
+</div>
+{% endblock %}

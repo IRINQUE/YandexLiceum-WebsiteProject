@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content1 %}
+<div class="TextHeader">Генератор</div>
+{% endblock %}
+
+{% block content2 %}
+<div class="GeneratorContainer">
+    <div class="GeneratorForm">
+        <form name="GeneratorFormMain" method="post">
+            <label class="GeneratorParamsText">
+                <input type="checkbox" name="UseNum" checked="checked">
+                Цифры
+            </label>
+            <br>
+            <label class="GeneratorParamsText">
+                <input type="checkbox" name="UseLettersSmall" checked="checked">
+                Прописные буквы
+            </label>
+            <br>
+            <label class="GeneratorParamsText">
+                <input type="checkbox" name="UseLettersBig" checked="checked">
+                Строчные буквы
+            </label>
+            <br>
+            <label class="GeneratorParamsText">
+                <input type="checkbox" name="UseSpecialLetters">
+                Специальные Символы
+            </label>
+            <br>
+            <label class="GeneratorParamsText">
+                Длина Пароля:
+                <input type="text" name="PasswordLen" value="8" maxlength="2" size="5">
+                Символов
+            </label>
+            <br>
+            <input type="submit" name="GeneratePasswordButton" class="GeneratePasswordButton" value="Сгенерировать">
+        </form>
+        {% for e in FivthPasswords %}
+            <p class="GeneratorPassword">{{e}}</p>
+        {% endfor %}
+    </div>
+
+    <a class="GeneratorBackButtonLink" href="/">
+        <button class="GeneratorBackButton" name="ButtonBack">
+            <h1 class="GeneratorBackTextSettings">НАЗАД</h1>
+        </button>
+    </a>
+</div>
+
+<a class="GeneratorLogOutButtonLink" href="/logout">
+    <button class="GeneratorLogOutButton" name="LogOutButton">
+        <h1 class="GeneratorBackTextSettings">LogOut</h1>
+    </button>
+</a>
+{% endblock %}
