@@ -8,7 +8,7 @@ from io import BytesIO
 import os
 import requests
 
-UPLOAD_FOLDER = "D:/Files/001 YandexLiceum/WebsiteReady/static/img"
+UPLOAD_FOLDER = "static\img"
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
 
 app = Flask(__name__)
